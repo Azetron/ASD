@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1522233819 source:d:\proiecte\asd\charactercreation.cpp
+	"CharacterCreation.h"
+	<iostream>
+	<string.h>
+	<cstdlib>
+
+1522233723 
+
+1522233723 d:\proiecte\asd\charactercreation.h
+	<iostream>
+
+1522235484 source:d:\proiecte\asd\main.cpp
+	<iostream>
+	"CharacterCreation.h"
+	<cstdlib>
+	<ctime>
+
+1522253028 source:/media/student/OSUT/Proiecte/ASD/CharacterCreation.cpp
+	"CharacterCreation.h"
+	<iostream>
+	<string.h>
+	<cstdlib>
+
+1522240924 /media/student/OSUT/Proiecte/ASD/CharacterCreation.h
+	<iostream>
+
+1522252855 source:/media/student/OSUT/Proiecte/ASD/main.cpp
+	<iostream>
+	"CharacterCreation.h"
+	<cstdlib>
+	<ctime>
+
+1522252142 source:/home/student/Desktop/ASD/CharacterCreation.cpp
+	"CharacterCreation.h"
+	<iostream>
+	<string.h>
+	<cstdlib>
+
+1522240924 /home/student/Desktop/ASD/CharacterCreation.h
+	<iostream>
+
+1522252855 source:/home/student/Desktop/ASD/main.cpp
+	<iostream>
+	"CharacterCreation.h"
+	<cstdlib>
+	<ctime>
+
+1523633065 source:c:\users\valen\desktop\asd\charactercreation.cpp
+	"CharacterCreation.h"
+	<iostream>
+	<string.h>
+	<cstdlib>
+
+1522233724 c:\users\valen\desktop\asd\charactercreation.h
+	<iostream>
+
+1523633065 source:c:\users\valen\desktop\asd\main.cpp
+	<iostream>
+	"CharacterCreation.h"
+	<cstdlib>
+	<ctime>
+
