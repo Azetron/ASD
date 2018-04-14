@@ -19,7 +19,7 @@ void CharacterCreation::creareCaracter()
     do{
     cout<<"Nume=";
     cin>>Nume;
-    }while(strlen(Nume)>7);
+    }while(strlen(Nume)>10);
     do{
     cout<<"Gender=";
     cin>>Gender;

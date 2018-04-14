@@ -32,8 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Achievements" />
 		<Unit filename="CharacterCreation.cpp" />
 		<Unit filename="CharacterCreation.h" />
+		<Unit filename="Rezultate" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
