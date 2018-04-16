@@ -26,6 +26,7 @@ struct Capitole
 Capitole *p,*u;
 int n=3;
 
+<<<<<<< HEAD
 
 void creareCap()
 {
@@ -63,6 +64,41 @@ void afisare()
 }
 
 
+=======
+void creareCap()
+{
+    Capitole *c;
+    if(!p)
+    {
+        p=new Capitole;
+        cout<<"Primul capitol:";
+        cin>>p->nume;
+        u=p;
+    }
+    else
+    {
+        c=new Capitole;
+        cout<<"Urmatorul:";
+        cin>>c->nume;
+        u->C=c;
+        u=c;
+    }
+    u->C=0;
+}
+void afisare()
+{
+    Capitole *c;
+    c=p;
+    while(c)
+    {
+        cout<<c->nume<<" ";
+        c=c->C;
+    }
+    cout<<endl;
+    cout<<"Daca vei termina cele 3 capitole, vei castiga jocul"<<endl;
+}
+
+>>>>>>> 5d77a3d2825802b5768e464e0d6e22049a64cc21
 void damage(int &i)
 {
     srand(time(NULL));
