@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
-
+#include <string.h>
 using namespace std;
 
 ofstream f("Achievements");
@@ -13,9 +13,9 @@ ofstream g("Rezultate");
 
 
 int playerAction;
-int HP_J=100;
 char Decizie;
 int goblinHP=100;
+CharacterCreation a;
 
 
 struct Capitole
@@ -25,8 +25,7 @@ struct Capitole
 };
 Capitole *p,*u;
 int n=3;
-<<<<<<< HEAD
-=======
+
 
 void creareCap()
 {
@@ -34,16 +33,18 @@ void creareCap()
     if(!p)
     {
         p=new Capitole;
-        cout<<"Primul capitol:";
-        cin>>p->nume;
+        //cout<<"Primul capitol:";
+        //cin>>p->nume;
+        strcpy(p->nume,"Inceputul");
         u=p;
     }
     else
     {
         c=new Capitole;
-        cout<<"Urmatorul:";
-        cin>>c->nume;
-        u->C=c;
+        //cout<<"Urmatorul:";
+        //cin>>c->nume;
+        strcpy(c->nume,"Cuprins");
+        //u->C=c;
         u=c;
     }
     u->C=0;
@@ -60,40 +61,8 @@ void afisare()
     cout<<endl;
     cout<<"Daca vei termina cele 3 capitole, vei castiga jocul"<<endl;
 }
->>>>>>> d8ea9516f1f1b249d44e1c79ee83635cb0726dad
 
-void creareCap()
-{
-    Capitole *c;
-    if(!p)
-    {
-        p=new Capitole;
-        cout<<"Primul capitol:";
-        cin>>p->nume;
-        u=p;
-    }
-    else
-    {
-        c=new Capitole;
-        cout<<"Urmatorul:";
-        cin>>c->nume;
-        u->C=c;
-        u=c;
-    }
-    u->C=0;
-}
-void afisare()
-{
-    Capitole *c;
-    c=p;
-    while(c)
-    {
-        cout<<c->nume<<" ";
-        c=c->C;
-    }
-    cout<<endl;
-    cout<<"Daca vei termina cele 3 capitole, vei castiga jocul"<<endl;
-}
+
 void damage(int &i)
 {
     srand(time(NULL));
@@ -117,7 +86,7 @@ void damageGoblin(int &i)
 }
 void tutorial()
 {
-    while(HP_J>0 && goblinHP>0)
+    while(a.HP_J>0 && goblinHP>0)
     {
         cout<<"Write 1 to attack"<<" "<<"or write 0 to regenerate"<<endl;
         cin>>playerAction;
@@ -129,28 +98,27 @@ void tutorial()
         if(playerAction==0)
         {
             cout<<"You choose to regenerate"<<endl;
-            regenerare(HP_J);
+            regenerare(a.HP_J);
         }
         cout<<"The goblin attacks"<<endl;
-        damageGoblin(HP_J);
+        damageGoblin(a.HP_J);
         system("cls");
-        cout<<"You have"<<" "<<HP_J<<" "<<"HP left"<<endl;
+        cout<<"You have"<<" "<<a.HP_J<<" "<<"HP left"<<endl;
         cout<<"Goblin has"<<" "<<goblinHP<<" "<<"HP left"<<endl;
 
     }
-    if(HP_J<=0)
+    if(a.HP_J<=0)
     {
         cout<<"Ai pierdut"<<endl;
     }
     if(goblinHP<=0)
     {
         cout<<"Tutorial indeplinit !!!!"<<endl;
-        HP_J=100;
+        a.HP_J=100;
     }
 }
 int main()
 {
-    CharacterCreation a;
     a.creareCaracter();
     a.arata();
     cout<<"Bun venit summoner"<<endl;
