@@ -5,7 +5,6 @@
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
-#include <string.h>
 using namespace std;
 
 ofstream f("Achievements");
@@ -14,7 +13,7 @@ ofstream g("Rezultate");
 
 int playerAction;
 char Decizie;
-int goblinHP=100;
+int NPC_HP=100;
 CharacterCreation a;
 
 
@@ -26,45 +25,6 @@ struct Capitole
 Capitole *p,*u;
 int n=3;
 
-<<<<<<< HEAD
-
-void creareCap()
-{
-    Capitole *c;
-    if(!p)
-    {
-        p=new Capitole;
-        //cout<<"Primul capitol:";
-        //cin>>p->nume;
-        strcpy(p->nume,"Inceputul");
-        u=p;
-    }
-    else
-    {
-        c=new Capitole;
-        //cout<<"Urmatorul:";
-        //cin>>c->nume;
-        strcpy(c->nume,"Cuprins");
-        //u->C=c;
-        u=c;
-    }
-    u->C=0;
-}
-void afisare()
-{
-    Capitole *c;
-    c=p;
-    while(c)
-    {
-        cout<<c->nume<<" ";
-        c=c->C;
-    }
-    cout<<endl;
-    cout<<"Daca vei termina cele 3 capitole, vei castiga jocul"<<endl;
-}
-
-
-=======
 void creareCap()
 {
     Capitole *c;
@@ -98,7 +58,7 @@ void afisare()
     cout<<"Daca vei termina cele 3 capitole, vei castiga jocul"<<endl;
 }
 
->>>>>>> 5d77a3d2825802b5768e464e0d6e22049a64cc21
+
 void damage(int &i)
 {
     srand(time(NULL));
@@ -115,39 +75,40 @@ void regenerare(int &i)
         i=i+10;
     }
 }
-void damageGoblin(int &i)
+void damageNPC(int &i)
 {
     srand(time(NULL));
     i=i-(rand()%10+5);
 }
-void tutorial()
+void battle()
 {
-    while(a.HP_J>0 && goblinHP>0)
+    while(a.HP_J>0 && NPC_HP>0)
     {
         cout<<"Write 1 to attack"<<" "<<"or write 0 to regenerate"<<endl;
         cin>>playerAction;
         if(playerAction==1)
         {
             cout<<"You choose to attack"<<endl;
-            damage(goblinHP);
+            damage(NPC_HP);
         }
         if(playerAction==0)
         {
             cout<<"You choose to regenerate"<<endl;
             regenerare(a.HP_J);
         }
-        cout<<"The goblin attacks"<<endl;
-        damageGoblin(a.HP_J);
+        cout<<"The NPC attacks"<<endl;
+        damageNPC(a.HP_J);
         system("cls");
         cout<<"You have"<<" "<<a.HP_J<<" "<<"HP left"<<endl;
-        cout<<"Goblin has"<<" "<<goblinHP<<" "<<"HP left"<<endl;
+        cout<<"NPC has"<<" "<<NPC_HP<<" "<<"HP left"<<endl;
 
     }
     if(a.HP_J<=0)
     {
         cout<<"Ai pierdut"<<endl;
+
     }
-    if(goblinHP<=0)
+    if(NPC_HP<=0)
     {
         cout<<"Tutorial indeplinit !!!!"<<endl;
         a.HP_J=100;
@@ -166,10 +127,10 @@ int main()
     cout<<"Pentru a indeplini tutorialul trebuie sa invingi goblinul"<<endl;
     system("pause");
     system("cls");
-    tutorial();
+    battle();
     system("pause");
     system("cls");
-    cout<<"Acum ca ai invins goblinul este timpul sa intri in povestea jocului"<<endl;
+    cout<<"Acum ca ai invins tutorialul este timpul sa intri in povestea jocului"<<endl;
     system("pause");
     system("cls");
     cout<<"Intr-un sat departe de lume traia un copil alaturi de familia lui"<<endl;

@@ -46,7 +46,7 @@
 	<cstdlib>
 	<ctime>
 
-1523725263 source:c:\users\valen\desktop\asd\charactercreation.cpp
+1523985724 source:c:\users\valen\desktop\asd\charactercreation.cpp
 	"CharacterCreation.h"
 	<iostream>
 	<string.h>
@@ -55,11 +55,10 @@
 1522233724 c:\users\valen\desktop\asd\charactercreation.h
 	<iostream>
 
-1523908901 source:c:\users\valen\desktop\asd\main.cpp
+1523986174 source:c:\users\valen\desktop\asd\main.cpp
 	<iostream>
 	"CharacterCreation.h"
 	<cstdlib>
 	<ctime>
 	<fstream>
-	<string.h>
 
