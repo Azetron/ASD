@@ -25,10 +25,7 @@ struct Capitole
 Capitole *p,*u;
 int n=3;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> bdf65747d3f267b3144e9e27d4a04408ce62b783
 void creareCap()
 {
     Capitole *c;
