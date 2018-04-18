@@ -14,6 +14,7 @@ ofstream g("Rezultate");
 int playerAction;
 char Decizie;
 int NPC_HP=100;
+int NPC_HP_Tutorial=100;
 CharacterCreation a;
 
 
@@ -25,10 +26,7 @@ struct Capitole
 Capitole *p,*u;
 int n=3;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> bdf65747d3f267b3144e9e27d4a04408ce62b783
 void creareCap()
 {
     Capitole *c;
@@ -82,7 +80,7 @@ void regenerare(int &i)
 void damageNPC(int &i)
 {
     srand(time(NULL));
-    i=i-(rand()%10+5);
+    i=i-(rand()%20+5);
 }
 void battle()
 {
@@ -114,14 +112,24 @@ void battle()
     }
     if(NPC_HP<=0)
     {
-        cout<<"Tutorial indeplinit !!!!"<<endl;
-        a.HP_J=100;
+        cout<<"Ai castigat"<<endl;
     }
+    NPC_HP=100;
 }
 int main()
 {
+    cout<<"Creaza primul tau caracter"<<endl;
     a.creareCaracter();
+    cout<<"Numele celor 3 capitole"<<endl;
+    for(int i=1;i<=n;i++)
+    {
+        creareCap();
+    }
+    system("cls");
     a.arata();
+    afisare();
+    system("pause");
+    system("cls");
     cout<<"Bun venit summoner"<<endl;
     system("pause");
     system("cls");
@@ -131,7 +139,17 @@ int main()
     cout<<"Pentru a indeplini tutorialul trebuie sa invingi goblinul"<<endl;
     system("pause");
     system("cls");
-    battle();
+    do{
+        battle();
+        if(a.HP_J<=0)
+        {
+            cout<<"Mai incearca pana castigi "<<endl;
+            a.HP_J=100;
+            battle();
+        }
+    }while(a.HP_J<=0);
+    f<<"First Blood"<<endl;
+    f<<"Tutorial indeplinit"<<endl;
     system("pause");
     system("cls");
     cout<<"Acum ca ai invins tutorialul este timpul sa intri in povestea jocului"<<endl;
@@ -176,18 +194,6 @@ int main()
     cout<<"Tine minte: decizie si consecinta"<<endl;
     system("pause");
     system("cls");
-    cout<<"Jocul are 3 capitole"<<endl;
-    system("pause");
-    system("cls");
-    for(int i=1;i<=n;i++)
-    {
-        creareCap();
-        cout<<endl;
-    }
-    cout<<endl;
-    afisare();
-    system("pause");
-    system("cls");
-    return 0;
+
 }
 
