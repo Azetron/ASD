@@ -117,6 +117,14 @@ void battle()
     }
     NPC_HP=100;
 }
+
+struct Arbore{
+    char info;
+    Arbore *st;
+    Arbore *dr;
+
+};
+Arbore *prim;
 int main()
 {
     cout<<"Creaza primul tau caracter"<<endl;
