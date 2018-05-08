@@ -46,7 +46,7 @@
 	<cstdlib>
 	<ctime>
 
-1523985724 source:c:\users\valen\desktop\asd\charactercreation.cpp
+1523985726 source:c:\users\valen\desktop\asd\charactercreation.cpp
 	"CharacterCreation.h"
 	<iostream>
 	<string.h>
@@ -55,7 +55,7 @@
 1522233724 c:\users\valen\desktop\asd\charactercreation.h
 	<iostream>
 
-1523986174 source:c:\users\valen\desktop\asd\main.cpp
+1524406195 source:c:\users\valen\desktop\asd\main.cpp
 	<iostream>
 	"CharacterCreation.h"
 	<cstdlib>
@@ -104,6 +104,22 @@
 	<iostream>
 
 1524088290 source:i:\asd\main.cpp
+	<iostream>
+	"CharacterCreation.h"
+	<cstdlib>
+	<ctime>
+	<fstream>
+
+1525459662 source:c:\users\valen\onedrive\desktop\asd\charactercreation.cpp
+	"CharacterCreation.h"
+	<iostream>
+	<string.h>
+	<cstdlib>
+
+1525460154 c:\users\valen\onedrive\desktop\asd\charactercreation.h
+	<iostream>
+
+1525753273 source:c:\users\valen\onedrive\desktop\asd\main.cpp
 	<iostream>
 	"CharacterCreation.h"
 	<cstdlib>

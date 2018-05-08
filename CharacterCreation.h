@@ -1,4 +1,3 @@
-#ifndef CHARACTERCREATION_H
 #define CHARACTERCREATION_H
 #include <iostream>
 class CharacterCreation
@@ -14,4 +13,3 @@ class CharacterCreation
     private:
 };
 
-#endif // CHARACTERCREATION_H

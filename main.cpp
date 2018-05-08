@@ -1,5 +1,3 @@
-//In fisierul "Achievements" o sa salvam toate realizarile
-//In fisierul "Rezultate" o sa salvam cum a decurs jocul(daca am castigat sau pierdut si ce realizari am facut)
 #include <iostream>
 #include "CharacterCreation.h"
 #include <cstdlib>
@@ -7,6 +5,7 @@
 #include <fstream>
 using namespace std;
 
+ifstream h("Date");
 ofstream f("Achievements");
 ofstream g("Rezultate");
 
@@ -34,14 +33,16 @@ void creareCap()
     {
         p=new Capitole;
         cout<<"Primul capitol:";
-        cin>>p->nume;
+        //cin>>p->nume;
+        h>>p->nume;
         u=p;
     }
     else
     {
         c=new Capitole;
         cout<<"Urmatorul:";
-        cin>>c->nume;
+        //cin>>c->nume;
+        h>>c->nume;
         u->C=c;
         u=c;
     }
@@ -194,6 +195,8 @@ int main()
     cout<<"Tine minte: decizie si consecinta"<<endl;
     system("pause");
     system("cls");
-
+    return 0;
 }
+
+
 

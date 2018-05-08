@@ -35,6 +35,7 @@
 		<Unit filename="Achievements" />
 		<Unit filename="CharacterCreation.cpp" />
 		<Unit filename="CharacterCreation.h" />
+		<Unit filename="Date" />
 		<Unit filename="Rezultate" />
 		<Unit filename="main.cpp" />
 		<Extensions>
