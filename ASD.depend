@@ -78,21 +78,22 @@
 	<ctime>
 	<fstream>
 
-1523985726 source:e:\asd\charactercreation.cpp
+1526477494 source:e:\asd\charactercreation.cpp
 	"CharacterCreation.h"
 	<iostream>
 	<string.h>
 	<cstdlib>
 
-1522233724 e:\asd\charactercreation.h
+1526477494 e:\asd\charactercreation.h
 	<iostream>
 
-1524059180 source:e:\asd\main.cpp
+1527081728 source:e:\asd\main.cpp
 	<iostream>
 	"CharacterCreation.h"
 	<cstdlib>
 	<ctime>
 	<fstream>
+	"Capitol_1.h"
 
 1523985726 source:i:\asd\charactercreation.cpp
 	"CharacterCreation.h"
@@ -125,4 +126,53 @@
 	<cstdlib>
 	<ctime>
 	<fstream>
+
+1527082490 e:\asd\capitol_1.h
+	<iostream>
+
+1527082490 source:e:\asd\capitol_1.cpp
+	"Capitol_1.h"
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+
+1526477494 source:g:\asd\charactercreation.cpp
+	"CharacterCreation.h"
+	<iostream>
+	<string.h>
+	<cstdlib>
+
+1527452932 g:\asd\charactercreation.h
+	<iostream>
+
+1527633500 source:g:\asd\main.cpp
+	<iostream>
+	"CharacterCreation.h"
+	<cstdlib>
+	<ctime>
+	<fstream>
+	"Capitol_1.h"
+	"BinaryTree.h"
+
+1527622936 g:\asd\capitol_1.h
+	<iostream>
+
+1527623324 source:g:\asd\capitol_1.cpp
+	"Capitol_1.h"
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+
+1527633128 source:g:\asd\binarytree.cpp
+	"BinaryTree.h"
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+
+1527630282 g:\asd\binarytree.h
+	<iostream>
+	<string>
 

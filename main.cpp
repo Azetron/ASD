@@ -3,7 +3,10 @@
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
+#include "Capitol_1.h"
+#include "BinaryTree.h"
 using namespace std;
+
 
 ifstream h("Date");
 ofstream f("Achievements");
@@ -15,6 +18,10 @@ char Decizie;
 int NPC_HP=100;
 int NPC_HP_Tutorial=100;
 CharacterCreation a;
+Capitol_1 b;
+
+
+int m=10;
 
 
 struct Capitole
@@ -32,16 +39,12 @@ void creareCap()
     if(!p)
     {
         p=new Capitole;
-        cout<<"Primul capitol:";
-        //cin>>p->nume;
         h>>p->nume;
         u=p;
     }
     else
     {
         c=new Capitole;
-        cout<<"Urmatorul:";
-        //cin>>c->nume;
         h>>c->nume;
         u->C=c;
         u=c;
@@ -81,7 +84,7 @@ void regenerare(int &i)
 void damageNPC(int &i)
 {
     srand(time(NULL));
-    i=i-(rand()%20+5);
+    i=i-(rand()%10+5);
 }
 void battle()
 {
@@ -101,6 +104,7 @@ void battle()
         }
         cout<<"The NPC attacks"<<endl;
         damageNPC(a.HP_J);
+        system("pause");
         system("cls");
         cout<<"You have"<<" "<<a.HP_J<<" "<<"HP left"<<endl;
         cout<<"NPC has"<<" "<<NPC_HP<<" "<<"HP left"<<endl;
@@ -118,23 +122,18 @@ void battle()
     NPC_HP=100;
 }
 
-struct Arbore{
-    char info;
-    Arbore *st;
-    Arbore *dr;
 
-};
-Arbore *prim;
 int main()
 {
-    cout<<"Creaza primul tau caracter"<<endl;
+    BinaryTree guessGame;
+    system("pause");
+    system("cls");
+    cout<<"Create your first character"<<endl;
     a.creareCaracter();
-    cout<<"Numele celor 3 capitole"<<endl;
     for(int i=1;i<=n;i++)
     {
         creareCap();
     }
-    system("cls");
     a.arata();
     afisare();
     system("pause");
@@ -143,9 +142,6 @@ int main()
     system("pause");
     system("cls");
     cout<<"Pentru a te familiariza cu sistemul jocului am pregatit un tutorial"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Pentru a indeplini tutorialul trebuie sa invingi goblinul"<<endl;
     system("pause");
     system("cls");
     do{
@@ -157,54 +153,19 @@ int main()
             battle();
         }
     }while(a.HP_J<=0);
-    f<<"First Blood"<<endl;
-    f<<"Tutorial indeplinit"<<endl;
+    //f<<"First Blood"<<endl;
+    //f<<"Tutorial indeplinit"<<endl;
     system("pause");
     system("cls");
-    cout<<"Acum ca ai invins tutorialul este timpul sa intri in povestea jocului"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Intr-un sat departe de lume traia un copil alaturi de familia lui"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Era foarte fericit pana cand intr-o zi a venit o armata de care toata lumea se temea"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Armata de scheleti a Regelui Schelet"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Copilul a stiut ca ceea ce v-a urma sa vina asa ca s-a ascuns cat de bine a putut pana au plecat"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Dupa ce armata a plecat, satul a ramas doar o ruina din ce era"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Dar cel mai rau a fost ca parintii lui au fost ucisi"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Dupa o zi de mers cu lacrimi in ochi copilul a intalnit un strain"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Acesta i-a spus ca stie ce s-a intamplat cu familia lui si ii ofera o sansa"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Sa aleaga intre moarte sigura sau sa se duca cu el pentru a putea fi antrenat in artele luptei ca intr-o buna zi sa il poata invinge pe regele schelet"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Copilul fara ezitare a plecat cu el iar dupa 3 ani de antrenament a ajuns sa fie pregatit in al infrunta pe Regele Schelet"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Acesta si-a luat la revedere de la el si a plecat in calatoria lui cu scopul de a-si razbuna parintii"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Pe parcursul jocului v-a trebui sa faci decizii"<<endl;
-    system("pause");
-    system("cls");
-    cout<<"Tine minte: decizie si consecinta"<<endl;
-    system("pause");
-    system("cls");
+    for(int j=1;j<=m;j++)
+    {
+         b.creare_lista();
+    }
+    b.lupta();
     return 0;
 }
+
+
 
 
 

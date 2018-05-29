@@ -1,3 +1,4 @@
+#ifndef CAPITOL_1_H
 #define CHARACTERCREATION_H
 #include <iostream>
 class CharacterCreation
@@ -13,3 +14,4 @@ class CharacterCreation
     private:
 };
 
+#endif // CAPITOL_1_H

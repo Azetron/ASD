@@ -17,14 +17,14 @@ CharacterCreation::~CharacterCreation()
 void CharacterCreation::creareCaracter()
 {
     do{
-    cout<<"Nume=";
+    cout<<"Nume utilizator:";
     cin>>Nume;
     }while(strlen(Nume)>10);
     do{
-    cout<<"Gender=";
+    cout<<"Genul utilizatorului(M sau F):";
     cin>>Gender;
     }while(Gender!='M' && Gender!='F');
-    cout<<"Varsta=";
+    cout<<"Varsta utilizator:";
     cin>>Varsta;
     system("cls");
 }

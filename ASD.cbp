@@ -33,10 +33,15 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Achievements" />
+		<Unit filename="BinaryTree.cpp" />
+		<Unit filename="BinaryTree.h" />
+		<Unit filename="Capitol_1.cpp" />
+		<Unit filename="Capitol_1.h" />
 		<Unit filename="CharacterCreation.cpp" />
 		<Unit filename="CharacterCreation.h" />
 		<Unit filename="Date" />
 		<Unit filename="Rezultate" />
+		<Unit filename="d.txt" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
