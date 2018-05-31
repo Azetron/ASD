@@ -3,6 +3,10 @@
 #include <cstdlib>
 #include <ctime>
 #include <fstream>
+<<<<<<< HEAD
+=======
+#include "Capitol_1.h"
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987
 #include "BinaryTree.h"
 using namespace std;
 
@@ -17,6 +21,10 @@ char Decizie;
 int NPC_HP=100;
 int NPC_HP_Tutorial=100;
 CharacterCreation a;
+Capitol_1 b;
+
+
+int m=10;
 
 
 
@@ -124,7 +132,10 @@ void battle()
 
 int main()
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987
     BinaryTree guessGame;
     system("pause");
     system("cls");
@@ -141,9 +152,12 @@ int main()
     cout<<"Welcome summoner"<<endl;
     system("pause");
     system("cls");
+<<<<<<< HEAD
     cout<<"I have prepared a tutorial for you in order to understand this game"<<endl;
     system("pause");
     system("cls");
+=======
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987
     do{
         battle();
         if(a.HP_J<=0)
@@ -157,9 +171,17 @@ int main()
     //f<<"Tutorial indeplinit"<<endl;
     system("pause");
     system("cls");
+<<<<<<< HEAD
 
 
     //b.lupta();
+=======
+    for(int j=1;j<=m;j++)
+    {
+         b.creare_lista();
+    }
+    b.lupta();
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987
     return 0;
 }
 

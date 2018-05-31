@@ -6,6 +6,7 @@
 using namespace std;
 
 
+<<<<<<< HEAD
 struct Nod{
     struct Nod *prev;
     int ID;
@@ -19,6 +20,12 @@ Capitol_1::Capitol_1()
     this->ultim=NULL;
     creare_lista();
     interact();
+=======
+
+Capitol_1::Capitol_1()
+{
+    //ctor
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987
 }
 
 Capitol_1::~Capitol_1()
@@ -26,6 +33,7 @@ Capitol_1::~Capitol_1()
     //dtor
 }
 
+<<<<<<< HEAD
 
 struct Nod* create_node(string info,int ID)
 {
@@ -173,6 +181,59 @@ void Capitol_1::interact()
 }
 ///---------------------------------------------------------------------
 
+=======
+ifstream F("d.txt");
+
+
+void Capitol_1::creare_lista()
+{
+
+ A=new Nod;
+getline(F,A->info);
+ if(!prim)
+
+   {prim=A;
+
+    prim->next=NULL;
+
+    prim->backk=NULL;
+
+    ultim=prim;
+    }
+
+ else
+
+   {ultim->next=A;
+    A->backk=ultim;
+    ultim=A;
+    ultim->next=0;
+   }
+
+
+}
+void Capitol_1::legatura()
+{
+    Nod *temp;
+    A=new Nod;
+    B=new Nod;
+    C=new Nod;
+    A=NULL;
+    B=NULL;
+    C=NULL;
+
+}
+void Capitol_1::afisare_lista()
+{
+ A=prim;
+
+ while(A)
+
+    {
+        cout<<A->info<<" "<<endl;
+        A=A->next;
+     }
+}
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987
 void Capitol_1::damage(int &i)
 {
     srand(time(NULL));

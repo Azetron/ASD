@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1   Why do you train ?
 2   To protect people
 3   To kill my enemy
@@ -9,3 +10,15 @@
 9   Be carefull on your path
 10  There are enemies everywhere
 11  Good luck !!!
+=======
+In drumul tau ai vazut un om atacat de un orc
+Merg mai departe
+Il ajut
+Rad de el si plec
+d
+e
+f
+g
+h
+i
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987

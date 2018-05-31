@@ -35,12 +35,20 @@
 		<Unit filename="Achievements" />
 		<Unit filename="BinaryTree.cpp" />
 		<Unit filename="BinaryTree.h" />
+<<<<<<< HEAD
+=======
+		<Unit filename="Capitol_1.cpp" />
+		<Unit filename="Capitol_1.h" />
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987
 		<Unit filename="CharacterCreation.cpp" />
 		<Unit filename="CharacterCreation.h" />
 		<Unit filename="DATE" />
 		<Unit filename="Rezultate" />
 		<Unit filename="d.txt" />
+<<<<<<< HEAD
 		<Unit filename="d_legaturi.txt" />
+=======
+>>>>>>> 9aa2b20c4dc9338173157cb14b9dad0136dc6987
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
