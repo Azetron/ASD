@@ -1,0 +1,11 @@
+1   Why do you train ?
+2   To protect people
+3   To kill my enemy
+4   To bring justice
+5   Why do you want to kill Skeleton King ?
+6   For revenge
+7   For justice
+8   For the sake of the world
+9   Be carefull on your path
+10  There are enemies everywhere
+11  Good luck !!!

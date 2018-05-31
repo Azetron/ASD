@@ -78,21 +78,22 @@
 	<ctime>
 	<fstream>
 
-1523985726 source:e:\asd\charactercreation.cpp
+1526477494 source:e:\asd\charactercreation.cpp
 	"CharacterCreation.h"
 	<iostream>
 	<string.h>
 	<cstdlib>
 
-1522233724 e:\asd\charactercreation.h
+1527452932 e:\asd\charactercreation.h
 	<iostream>
 
-1524059180 source:e:\asd\main.cpp
+1527685736 source:e:\asd\main.cpp
 	<iostream>
 	"CharacterCreation.h"
 	<cstdlib>
 	<ctime>
 	<fstream>
+	"BinaryTree.h"
 
 1523985726 source:i:\asd\charactercreation.cpp
 	"CharacterCreation.h"
@@ -125,4 +126,103 @@
 	<cstdlib>
 	<ctime>
 	<fstream>
+
+1527673346 e:\asd\capitol_1.h
+	<iostream>
+
+1527674620 source:e:\asd\capitol_1.cpp
+	"Capitol_1.h"
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+
+1526477494 source:g:\asd\charactercreation.cpp
+	"CharacterCreation.h"
+	<iostream>
+	<string.h>
+	<cstdlib>
+
+1527452932 g:\asd\charactercreation.h
+	<iostream>
+
+1527634938 source:g:\asd\main.cpp
+	<iostream>
+	"CharacterCreation.h"
+	<cstdlib>
+	<ctime>
+	<fstream>
+	"Capitol_1.h"
+	"BinaryTree.h"
+
+1527622936 g:\asd\capitol_1.h
+	<iostream>
+
+1527623324 source:g:\asd\capitol_1.cpp
+	"Capitol_1.h"
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+
+1527633128 source:g:\asd\binarytree.cpp
+	"BinaryTree.h"
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+
+1527630282 g:\asd\binarytree.h
+	<iostream>
+	<string>
+
+1527633128 source:e:\asd\binarytree.cpp
+	"BinaryTree.h"
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+
+1527630282 e:\asd\binarytree.h
+	<iostream>
+	<string>
+
+1527633128 source:h:\asd\binarytree.cpp
+	"BinaryTree.h"
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+
+1527630282 h:\asd\binarytree.h
+	<iostream>
+	<string>
+
+1527674620 source:h:\asd\capitol_1.cpp
+	"Capitol_1.h"
+	<iostream>
+	<fstream>
+	<cstdlib>
+	<ctime>
+
+1527673346 h:\asd\capitol_1.h
+	<iostream>
+
+1526477494 source:h:\asd\charactercreation.cpp
+	"CharacterCreation.h"
+	<iostream>
+	<string.h>
+	<cstdlib>
+
+1527452932 h:\asd\charactercreation.h
+	<iostream>
+
+1527685688 source:h:\asd\main.cpp
+	<iostream>
+	"CharacterCreation.h"
+	<cstdlib>
+	<ctime>
+	<fstream>
+	"BinaryTree.h"
+	"Capitol_1.h"
 
